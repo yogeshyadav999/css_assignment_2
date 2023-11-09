@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 2</title>
+    <style>
+        body{
+            background-color: #2d6524;
+        }
+        body p{
+            margin: 0px;
+        }
+        .wrapper{
+            width: 100%;
+            /* height: auto; */
+            box-sizing: border-box; 
+            float: left;
+            margin: 10px 10px;
+            display: flex;
+        }
+        .left{
+            width: 20%;
+            float: left;
+            box-sizing: border-box;
+            background-color: white;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+        .logo{
+            font-size: 25px;
+            color: #7cb145;
+            text-align: center;
+        }
+        .logo img{
+            margin: auto;
+        }
+        hr{
+            width: 90%;
+            color: #7cb145;
+            border-style: dotted;
+        }
+        .list{
+            color: #7cb145;
+        }
+        ul li::marker{
+            color: #5298a2;
+        }
+        .list::first-line{
+            color: #5298a2;
+        }
+        .left-content{
+            margin-right: 20px;
+        }
+        .left-content h3{
+            color: #5298a2;
+        }
+        .left-content h2{
+            color: #7cb145;
+        }
+        .left-content p{
+            color: #5298a2;
+        }
+        .footer-line{
+            width: 95%;
+            height: 40px;
+            margin: 15px 0px;
+            padding: 10px;
+            background-color: #3d9131;
+            color: white;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between
+        }
+        .middle{
+            width: 58%;
+            float: left;
+            box-sizing: border-box;
+            margin: 0px 20px;
+            border-radius: 10px;
+            padding-right: 10px;
+            background-color: white;
+        }
+        .middle h3{
+            color: #3d9131;
+            margin: 10px 0px;
+            margin-left: 20px;
+            font-size: 25px;
+        }
+        .decor{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .decor-img{
+            width: 97%;
+            display: block;
+            /* max-width: 100%; */
+            margin: 0% 20px;
+            box-sizing: border-box;
+        }
+        .decor, img{
+            display: block;
+            max-width: 100%;
+            margin: 0% 20px;
+            box-sizing: border-box;
+        }
+        .para1{
+            justify-content: space-around;
+            margin: 10px 20px;
+            box-sizing: border-box;
+        }
+        .left-img{
+            float: left;
+            margin: 10px 0px;
+            box-sizing: border-box;
+            display: flex;
+        }
+        .left-img img{
+            border-radius: 10px;
+        }
+        .img-1{
+            float: left;
+            border: 2px dashed #7cb145;
+            /* padding: 2px; */
+            box-sizing: border-box;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+        .img-1 img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            padding: 2px;
+        }
+        .img-2{
+            float: left;
+            border: 2px dotted #7cb145;
+            box-sizing: border-box;
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        .img-2 img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            padding: 2px;
+        }
+        .img-3{
+            float: left;
+            border: 2px dotted #7cb145;
+            box-sizing: border-box;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+        .img-3 img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            padding: 2px;
+        }
+        .footer-content{
+            width: 97%;
+            height: 40px;
+            margin: 30px 20px 17px 20px;
+            padding: 10px;
+            background-color: #3d9131;
+            color: white;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between
+        }
+        .right{
+            width: 19%;
+            float: left;
+            box-sizing: border-box;
+            background-color: white;
+            /* padding-left: 10px; */
+            border-radius: 10px;
+        }
+        .right h3{
+            color: #3d9131;
+            margin: 10px 0px;
+            margin-left: 20px;
+            font-size: 25px;
+        }
+        .img-4{
+            width: 100%;
+            margin: 10px 10px 10px 0px;
+        }
+        .img-5{
+            width: 100%;
+            margin: 10px 10px 10px 0px;
+        }
+        .img-4 img{
+            width: 88%;
+            height: 150px;
+        }
+        .img-5 img{
+            width: 88%;
+            height: 150px;
+        }
+        .middle-line{
+            width: 88%;
+            height: 40px;
+            margin: 20px 20px;
+            padding: 10px;
+            background-color: #158f91;
+            color: white;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between
+        }
+        .footer-note{
+            width: 88%;
+            height: 40px;
+            margin: 20px 20px;
+            padding: 10px;
+            background-color: #34b61e;
+            color: white;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between
+        }
+        .para2 p{
+            margin-left: 20px;
+            margin-right: 20px;
+            box-sizing: border-box;
+        }
+        .para2 p span{
+            color: #34b61e;
+        }
+        .social-icon{
+            width: 90%;
+            float: left;
+            /* margin: 10px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .social-icon img{
+            width:50%;
+            float:left;
+            margin: 20px;
+        }
+        /* .facebook img{
+            box-sizing: border-box;
+        }
+        .twitter img{
+            float: left;
+            box-sizing: border-box;
+        } */
+        .stumble img{
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
+        }
+        .digg img{
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <div class="logo">
+                <img src="./img/Logo.png" alt="Company logo" width="100px">
+                <p class="cpny-heading">My Company Logo</p>
+            </div>
+            <hr>
+            <div class="list">
+                <ul>
+                    <li>Home</li>
+                    <li>Full Page</li>
+                    <li>Some Elements</li>
+                    <li>Portfolio</li>
+                    <li>Tables and Lists</li>
+                    <li>Contact Us & Map</li>
+                    <li>Contact Us Full</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="left-content">
+                <h2>@news</h2>
+                <h3>Lorem Ipsum!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit saepe natus repudiandae. Eaque deleniti, optio est quod, minima porro quidem ad ipsam perferendis suscipit cupiditate! Aspernatur doloribus consequatur?</p>
+            </div>
+            <div class="left-content">
+                <h3>Lorem Ipsum!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit saepe natus repudiandae. Eaque deleniti, optio est quod, minima porro quidem ad ipsam perferendis suscipit cupiditate! Aspernatur doloribus consequatur?</p>
+            </div>
+            <div class="footer-line">
+                <span class="span1">Click to see more...</span>
+                <span class="span2">></span>
+            </div>
+        </div>
+        <div class="middle">
+            <div>
+                <h3>the decor of your dreams</h3>
+            </div>
+            <hr>
+            <div class="decore">
+                <img class="decor-img" src="./img/Decor.png" alt="Decor design">
+                <p class="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit odit rchitecto incidunt voluptatum nam?
+                lique magnam ipsum deserunt maxime facere reiciendis? Quisquam, nostrum quibusdam! Magnam hic nihil ro eaque sint, voluptatem, iste nesciunt!
+                Rerum maxime excepturi vel consequatur molestiae exp ullam suscipit, ex quibusdam dolores illum fuga, est optio, possimus eligendi quis ut praesentium dolore voluptate consequuntur dolorum voluptates. Perferendis? <a href="#">more...</a></p>
+            </div>
+            <hr>
+            <div>
+            <div class="left-img">
+                <img src="./img/3.jpg" alt="">
+            </div>
+            <div class="right-content">
+                <h3>Lorem ipsum dolor sit amet!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fa natus repudiandae. Optio est quod, ipsam perferendis suscipit cupiditate! Aspernatur magnam quae doloribus consequatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt voluptate velit soluta ut, commodi iure consequuntur nobis ab sint digniss, ex fuga autem possimus assumenda? <a href="#">more...</a></p>
+            </div>
+            <div class="img-1">
+                <img src="./img/4.jpg" alt="">
+            </div>
+            <div class="img-2">
+                <img src="./img/5.jpg" alt="">
+            </div>
+            <div class="img-3">
+                <img src="./img/7.jpg" alt="">
+            </div>
+        </div>
+            <div class="footer-content">
+                <p>Click and check out our portfolio</p>
+                <span>></span>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <h3>projets</h3>
+            </div>
+            <hr>
+            <div class="img-4">
+                <img src="./img/8.png" alt="">
+            </div>
+            <div class="img-5">
+                <img src="./img/9.png" alt="">
+            </div>
+            <div class="middle-line">
+                <p>Click to see more...</p>
+                <span>></span>
+            </div>
+            <hr>
+            <div class="para2">
+                <h3>Last tweet</h3>
+                <p>When you're courting a nice girl an hour seems like a
+                    second.When you sit on a red-hot cinder a second seems
+                    like an hour. Thats relativty!... <br>
+                <span>20 hours ago</span></p>
+            </div>
+            <div class="footer-note">
+                <p>Follow us on Twitter</p>
+                <span>></span>
+            </div>
+            <div class="social-icon">
+            <div class="facebook">
+                <img src="./img/facebook.png" alt="">
+            </div>
+            <div class="twitter">
+                <img src="./img/twitter.png" alt="">
+            </div>
+            <div class="stumble">
+                <img src="./img/social-stumbleupon.png" alt="">
+            </div>
+            <div class="digg">
+                <img src="./img/Digg_Icon.png" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
